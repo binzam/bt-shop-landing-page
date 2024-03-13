@@ -17,21 +17,52 @@ body {
   width: 100%;
   background-color: var(--blue);
 }
+a {
+  text-decoration: none;
+}
 .header {
-  width: 100%;
+  width: calc(100% - 2rem);
+  height: 60px;
   background-color: var(--white);
-  padding: 1rem;
-  border-radius: 0rem 0rem 1rem 1rem;
+  padding: 0 1rem;
+  padding-right: 5rem;
+  border-radius: 0rem 0rem 1rem 0rem;
+  border: 2px solid var(--orange);
+  border-top: none;
   position: fixed;
   top: 0;
-  left: 0;
-  height: 60px;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header a {
+.bt-shop {
   text-decoration: none;
   color: var(--black);
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 700;
+}
+.nav_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav_item {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--orange);
+  border: 1px solid transparent;
+
+  transition: all 0.3s ease;
+}
+.nav_item:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--orange);
 }
 .content {
   display: block;
@@ -82,9 +113,9 @@ body {
   width: 100%;
   min-height: calc(100vh - 1rem);
   background-color: var(--white);
-    padding: 1rem;
+  padding: 1rem;
 }
-.feature{
-    width: 50%;
-    height: 100vh;
+.feature {
+  width: 50%;
+  height: 100vh;
 }
