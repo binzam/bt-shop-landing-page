@@ -192,19 +192,23 @@ a {
 }
 .about_section_content {
   width: 100%;
-  height: calc(100vh - 237px);
+  min-height: calc(100vh - 237px);
   display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .about_project {
   width: 40%;
+  background-color: var(--black);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .about_project p {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--black);
+  color: var(--white);
+  padding: 1rem 2rem;
   text-align: left;
+
 }
 .about_me {
   width: 40%;
